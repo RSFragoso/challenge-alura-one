@@ -1,0 +1,210 @@
+/* Estilo padrão para o corpo da página */
+body {
+    height: calc(100vh - 160px); 
+    margin: 0; 
+    padding: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: #0A3871; 
+    display: flex; 
+    justify-content: left; 
+}
+
+/* Estilo para a imagem no cabeçalho */
+header img {
+    background-color: white; 
+    border-radius: 1.5rem 0.5rem; 
+    border-color: #0A3871; 
+    padding: 10px; 
+    margin-right: 10px; 
+    margin-left: 20px; 
+}
+
+/* Estilo para o título no cabeçalho */
+header h1 {
+    color: white; 
+    font-size: 38px; 
+}
+
+/* Estilo para o rodapé */
+footer {
+    background: #0A3871; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    font-size: 15px; 
+}
+
+/* Estilo para o contêiner principal */
+.wrapper {
+    background: rgb(245, 243, 243); 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 100%; 
+}
+
+/* Estilo para o contêiner de conteúdo */
+.container {
+    width: 100%; 
+    max-width: 100%; 
+    margin: auto auto; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+}
+
+/* Estilo para a caixa de entrada */
+.box-input {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 10px;
+    text-align: center; 
+}   
+
+/* Estilo para a área de texto de entrada */
+.input-textarea {
+    width: 100%; 
+    max-width: calc(100% - 20px); 
+    height: 233px; 
+    margin-top: 15px; 
+    resize: none; 
+    border-radius: 0.5rem; 
+    border: 0.2rem solid; 
+    border-color: #0A3871; 
+}
+
+/* Estilo para o conteúdo do aviso de entrada */
+.input-warning-content {
+    color: #0A3871; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: auto; 
+    height: auto; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    margin-top: 10px; 
+}
+
+/* Estilo para a imagem no conteúdo do aviso de entrada */
+.input-warning-content img {
+    margin-right: 5px; 
+}
+
+/* Estilo para os botões de ação */
+.input-buttons {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 60px; 
+    margin-top: 20px; 
+}
+
+/* Estilo para o botão de codificação */
+.button-encode {
+    width: 280px; 
+    height: 80px; 
+    margin: 0 5px; 
+    background-color: #0A3871; 
+    color: white; 
+    font-size: 24px; 
+    border: none; 
+    border-radius: 16px; 
+    cursor: pointer;
+}
+
+/* Estilo para o botão de decodificação */
+.button-decode {
+    width: 260px; 
+    height: 80px; 
+    margin: 0 15px; 
+    background-color: white; 
+    color: #0A3871; 
+    font-size: 24px; 
+    border: 0.2rem solid; 
+    border-radius: 16px; 
+    cursor: pointer;
+}
+
+/* Estilo para o botão de cópia */
+.button-copy {
+    width: 280px; 
+    height: 80px; 
+    margin: 0 5px; 
+    background-color: #0A3871; 
+    color: white; 
+    font-size: 24px; 
+    border-radius: 16px; 
+    margin-top: 20px; 
+    cursor: pointer;
+}
+
+/* Estilo para a caixa de saída */
+.box-output {
+    width: 100%; 
+    max-width: 100%; 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 10px; 
+    text-align: center; 
+    color: #0A3871; 
+}
+
+/* Estilo para a mensagem de nenhum resultado */
+.no-result {
+    width: 100%; 
+    height: max-content; 
+}
+
+/* Estilo para a imagem na mensagem de nenhum resultado */
+.no-result img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Estilo para a área de resultado */
+.result {
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Estilo para a área de texto de saída */
+.output-textarea {
+    width: 100%; 
+    max-width: calc(100% - 20px); 
+    height: 233px; 
+    margin-top: 15px; 
+    resize: none; 
+    border-radius: 0.5rem;
+    border: 0.2rem solid; 
+    border-color: #0A3871;
+    background-color: white; 
+}
+
+/* Estilo responsivo para dispositivos com largura máxima de 600px */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .input-textarea, .output-textarea {
+        width: 100%; 
+        max-width: calc(100% - 20px); 
+    }
+    .box-input, .box-output {
+        margin: 10px 0; 
+    }
+}

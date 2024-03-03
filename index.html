@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/alura.svg" alt="Logo da Alura" />
+        <h1>Challenge Alura One - 2024</h1>
+    </header>
+    <main class="wrapper">
+        <div class="container">
+            <div class="box-input">
+                <textarea id="text-input" class="input-textarea" placeholder="Digite o seu texto!"></textarea>
+                <div class="input-warning-content">
+                    <img src="./assets/warning.svg" alt="Logo da Alura" />
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div class="input-buttons">
+                    <button class="button-encode" type="button" onclick="encode()">CRIPTOGRAFAR</button>
+                    <button class="button-decode" type="button" onclick="decode()">DESCRIPTOGRAFAR</button>
+                </div>
+            </div>
+            <div class="box-output">
+                <div id="no-result" class="no-result">
+                    <img src="./assets/finder.svg" alt="Imagem ilustrativa garoto pesquisando">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div id="result" class="result" hidden>
+                    <textarea id="text-output" class="output-textarea" disabled></textarea>
+                    <button class="button-copy" type="button" onclick="copyText()">COPIAR</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Rafael Fragoso © 2024</h3>
+    </footer>
+</body>
+
+</html>
